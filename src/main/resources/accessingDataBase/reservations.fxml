@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="accessingDataBase.ReservationsController">
+   <children>
+      <Label alignment="CENTER" prefHeight="35.0" prefWidth="900.0" text="RESERVAS">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" editable="true" layoutY="35.0" prefHeight="415.0" prefWidth="900.0">
+         <columns>
+            <TableColumn fx:id="columnName" prefWidth="100.0" text="NOMBRE" />
+            <TableColumn fx:id="columnLastName1" prefWidth="100.0" text="1º APELLIDO" />
+            <TableColumn fx:id="columnLastName2" prefWidth="100.0" text="2º APELLIDO" />
+            <TableColumn fx:id="columnCompany" prefWidth="100.0" text="EMPRESA" />
+            <TableColumn fx:id="columnEmail" prefWidth="200.0" text="EMAIL" />
+            <TableColumn fx:id="columnNumAcomp" prefWidth="70.0" text="Nº ACOMPAÑANTES" />
+            <TableColumn fx:id="columnObservations" prefWidth="229.0" text="OBSERVACIONES" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</Pane>
